@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Header fijo y Navegación */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-lumina {
+  background-color: rgba(239, 231, 221, 0.96);
+  backdrop-filter: blur(8px);
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.navbar-lumina .navbar-item {
+  color: #2F3E46;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.navbar-lumina .navbar-item:hover, .navbar-lumina .navbar-item.is-active {
+  background-color: transparent;
+  color: #6A806D;
+  font-weight: 600;
+}
+.navbar-lumina {
+  /* Mayor especificidad y al final para que no sea sobrescrito */
+}
+.navbar-lumina a.navbar-item.logo-texto {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2F3E46;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar-lumina a.navbar-item.logo-texto i {
+  font-size: 1.8rem;
+  color: #849B87;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.navbar-lumina a.navbar-item.logo-texto:hover {
+  background-color: transparent;
+  color: #6A806D;
+  transform: scale(1.03);
+}
+.navbar-lumina a.navbar-item.logo-texto:hover i {
+  color: #6A806D;
+  transform: rotate(-12deg);
+}
+
+/* Sección Hero */
+.hero-lumina {
+  background-image: linear-gradient(90deg, rgba(245, 240, 235, 0.96) 0%, rgba(245, 240, 235, 0.85) 45%, rgba(245, 240, 235, 0.15) 100%), url("../assets/img/hero-spa.jpg");
+  background-size: cover;
+  background-position: center right;
+  min-height: 520px;
+}
+.hero-lumina .titulo-principal {
+  color: #2F3E46;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.hero-lumina .subtitulo-hero {
+  color: #5C6B73;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+/* Sección Servicios */
+.seccion-servicios {
+  background-color: #F7F6F2;
+  padding: 4.5rem 1.5rem;
+}
+.seccion-servicios .titulo-seccion {
+  color: #2F3E46;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer-lumina {
+  background-color: #262C2B;
+  color: #FFFFFF;
+  padding: 2.5rem 1.5rem;
+}
+.footer-lumina .marca-footer {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+}
+.footer-lumina .copyright-footer, .footer-lumina .contacto-footer {
+  font-size: 0.85rem;
+  color: #CBD5E1;
+}
+.footer-lumina .enlaces-footer a {
+  color: #E2E8F0;
+  font-size: 0.85rem;
+  margin: 0 0.3rem;
+}
+.footer-lumina .enlaces-footer a:hover {
+  color: #849B87;
+}
+.footer-lumina .redes-footer a {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+}
+.footer-lumina .redes-footer a:hover {
+  color: #849B87;
+}
+
+/*# sourceMappingURL=main-sass.css.map */
