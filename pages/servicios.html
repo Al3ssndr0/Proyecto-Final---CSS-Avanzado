@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de servicios, tratamientos faciales, aromaterapia, depilación y tarifas de Lumina Atelier en Arequipa.">
+    <title>Servicios | Lumina Atelier</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main-sass.css">
+    <link rel="stylesheet" href="../css/main-less.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO FIJO -->
+    <header>
+        <nav class="navbar navbar-lumina" role="navigation" aria-label="Navegación principal">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item logo-texto" href="../index.html">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Lumina Atelier</span>
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="menuPrincipal" class="navbar-menu">
+                    <div class="navbar-end is-align-items-center">
+                        <a class="navbar-item" href="../index.html">Inicio</a>
+                        <a class="navbar-item" href="nosotros.html">Nosotros</a>
+                        <a class="navbar-item is-active" href="servicios.html">Servicios</a>
+                        <a class="navbar-item" href="cosmeticos.html">Cosméticos</a>
+                        <a class="navbar-item" href="blog.html">Blog</a>
+                        <a class="navbar-item" href="contacto.html">Contacto</a>
+                        <div class="navbar-item">
+                            <a href="contacto.html" class="button btn-lumina">RESERVAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER INTERNO REUTILIZABLE -->
+    <section class="hero is-small banner-interno banner-servicios">
+        <div class="hero-body has-text-centered">
+            <div class="container animar-scroll">
+                <p class="etiqueta-superior">CATÁLOGO DE BIENESTAR</p>
+                <h1 class="title is-1 titulo-principal">Nuestros Servicios</h1>
+                <p class="subtitle is-5 subtitulo-interno mt-2">
+                Tratamientos diseñados con cosmética botánica y aparatología moderna para cuidar tu piel y renovar tu energía.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="section seccion-crema">
+        <div class="container">
+
+        <!-- BLOQUE 1: CATEGORÍAS PRINCIPALES (Reutiliza .servicio-card) -->
+        <section class="mb-6">
+            <div class="columns is-variable is-5">
+            <!-- Servicio 1 -->
+                <div class="column is-4 animar-scroll delay-1">
+                    <article class="card servicio-card">
+                        <div class="card-content">
+                            <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                <h2 class="title is-4 titulo-card">Afeitado y Depilación</h2>
+                                <figure class="image is-64x64 icono-servicio">
+                                    <img src="../assets/img/icono-afeitado.png" alt="Afeitado y Depilación">
+                                </figure>
+                            </div>
+                            <p class="texto-card mb-4">
+                            Depilación con cera orgánica tibia, perfilado facial y rituales de afeitado clásico con toallas calientes y bálsamos calmantes.
+                            </p>
+                            <a href="afeitado-depilacion.html" class="enlace-detalle">
+                            Explorar tratamientos <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="column is-4 animar-scroll delay-2">
+                    <article class="card servicio-card">
+                        <div class="card-content">
+                            <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                <h2 class="title is-4 titulo-card">Aromaterapia</h2>
+                                <figure class="image is-64x64 icono-servicio">
+                                    <img src="../assets/img/icono-aromaterapia.png" alt="Aromaterapia">
+                                </figure>
+                            </div>
+                            <p class="texto-card mb-4">
+                            Masajes relajantes, descontracturantes y con piedras volcánicas utilizando aceites esenciales puros de lavanda, eucalipto y romero.
+                            </p>
+                            <a href="aromaterapia.html" class="enlace-detalle">
+                            Explorar tratamientos <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="column is-4 animar-scroll delay-3">
+                    <article class="card servicio-card">
+                        <div class="card-content">
+                            <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                <h2 class="title is-4 titulo-card">Cuidado de la Piel</h2>
+                                <figure class="image is-64x64 icono-servicio">
+                                    <img src="../assets/img/icono-piel.png" alt="Cuidado de la Piel">
+                                </figure>
+                            </div>
+                            <p class="texto-card mb-4">
+                            Limpieza facial profunda con microdermoabrasión, hidratación con ácido hialurónico y mascarillas botánicas personalizadas.
+                            </p>
+                            <a href="cuidado-piel.html" class="enlace-detalle">
+                            Explorar tratamientos <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE 2: TABLA COMPARATIVA DE TARIFAS (Responsiva con .table-container) -->
+        <section class="caja-blanca mb-6 animar-scroll delay-2">
+            <div class="has-text-centered mb-5">
+                <p class="etiqueta-superior">TARIFARIO TRANSPARENTE</p>
+                <h2 class="title is-3 mt-1">Duración y Precios Referenciales</h2>
+            </div>
+
+            <div class="table-container">
+                <table class="table is-fullwidth is-hoverable tabla-lumina">
+                    <thead>
+                    <tr>
+                        <th>Tratamiento</th>
+                        <th>Categoría</th>
+                        <th>Duración</th>
+                        <th class="has-text-right">Inversión</th>
+                        <th class="has-text-centered">Acción</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Limpieza Facial Profunda Lumina</strong></td>
+                        <td>Cuidado de la Piel</td>
+                        <td>60 min</td>
+                        <td class="has-text-right precio-tabla">S/ 120</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hidratación Botánica con Ácido Hialurónico</strong></td>
+                        <td>Cuidado de la Piel</td>
+                        <td>50 min</td>
+                        <td class="has-text-right precio-tabla">S/ 140</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Masaje Descontracturante con Aceites Puros</strong></td>
+                        <td>Aromaterapia</td>
+                        <td>60 min</td>
+                        <td class="has-text-right precio-tabla">S/ 110</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ritual de Piedras Calientes y Lavanda</strong></td>
+                        <td>Aromaterapia</td>
+                        <td>75 min</td>
+                        <td class="has-text-right precio-tabla">S/ 155</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Depilación Orgánica (Piernas Completas)</strong></td>
+                        <td>Afeitado y Depilación</td>
+                        <td>45 min</td>
+                        <td class="has-text-right precio-tabla">S/ 85</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Afeitado Clásico con Toalla Caliente</strong></td>
+                        <td>Afeitado y Depilación</td>
+                        <td>40 min</td>
+                        <td class="has-text-right precio-tabla">S/ 70</td>
+                        <td class="has-text-centered">
+                        <a href="contacto.html" class="button is-small btn-lumina">Reservar</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- BLOQUE 3: ACCESO A INSTALACIONES Y PROMOCIONES -->
+            <section class="caja-blanca borde-salvia animar-scroll delay-3">
+                <div class="columns is-vcentered">
+                    <div class="column is-8">
+                        <p class="etiqueta-superior">EXPERIENCIA COMPLETA</p>
+                        <h2 class="title is-4 mt-1 mb-2">¿Buscas un paquete combinado o conocer nuestras cabinas?</h2>
+                        <p class="texto-card">
+                        Descubre nuestros descuentos de temporada para parejas y revisa la tecnología estética que utilizamos en cada sesión.
+                        </p>
+                    </div>
+                    <div class="column is-4 has-text-right-desktop">
+                        <div class="buttons is-right">
+                            <a href="equipo-spa.html" class="button is-light">Ver Equipos</a>
+                            <a href="promociones.html" class="button btn-lumina">PROMOCIONES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer footer-lumina">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-4">
+                    <p class="marca-footer">Lumina Atelier</p>
+                    <p class="copyright-footer mt-1">&copy; 2026 Hojas de Estilo en Cascada Avanzado</p>
+                </div>
+
+                <div class="column is-4 has-text-centered">
+                    <div class="enlaces-footer">
+                        <a href="../index.html">Inicio</a> |
+                        <a href="nosotros.html">Nosotros</a> |
+                        <a href="servicios.html">Servicios</a> |
+                        <a href="cosmeticos.html">Cosméticos</a> |
+                        <a href="blog.html">Blog</a> |
+                        <a href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="column is-4 has-text-right-desktop has-text-centered-mobile">
+                    <p class="contacto-footer">contacto@luminaatelier.com | Arequipa, Perú</p>
+                    <div class="redes-footer mt-2">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menú hamburguesa móvil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
