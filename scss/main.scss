@@ -386,3 +386,103 @@ header {
     color: $verde-salvia-oscuro;
   }
 }
+
+/* =========================================
+   FORMULARIOS ESTILIZADOS (Contacto y Clientes)
+   Usa clases Bulma: .field .control .input .select .textarea
+   ========================================= */
+$rojo-suave: #B5655C;
+
+.form-lumina {
+  .label {
+    color: $texto-oscuro;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+  }
+
+  .input,
+  .textarea,
+  .select select {
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    background-color: $blanco;
+    color: $texto-oscuro;
+    box-shadow: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &::placeholder {
+      color: #A5ADA8;
+    }
+
+    // Estado FOCUS: verde salvia con halo suave
+    &:focus {
+      border-color: $verde-salvia;
+      box-shadow: 0 0 0 3px rgba(132, 155, 135, 0.25);
+      outline: none;
+    }
+
+    // Estado VALID: solo cuando el usuario ya escribió algo
+    &:valid:not(:placeholder-shown),
+    &:valid:not(:placeholder-shown):focus {
+      border-color: $verde-salvia-oscuro;
+    }
+
+    // Estado INVALID: solo cuando ya hay contenido (evita rojo al cargar)
+    &:invalid:not(:placeholder-shown):not(:focus) {
+      border-color: $rojo-suave;
+      background-color: #FDF7F6;
+    }
+  }
+
+  .select select:valid {
+    border-color: #DDD8CE;
+  }
+
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: $verde-salvia-oscuro;
+  }
+
+  .textarea {
+    min-height: 130px;
+  }
+
+  .checkbox,
+  .radio {
+    color: $texto-suave;
+    font-size: 0.9rem;
+
+    input {
+      accent-color: $verde-salvia-oscuro;
+      margin-right: 0.4rem;
+    }
+  }
+
+  .help {
+    font-size: 0.78rem;
+    color: $texto-suave;
+  }
+}
+
+/* =========================================
+   MAPA EMBEBIDO (iframe responsivo)
+   ========================================= */
+.mapa-lumina {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 340px;
+    border: 0;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+      height: 260px;
+    }
+  }
+}
