@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de cosmética botánica, aceites esenciales y cuidado facial de Lumina Atelier en Arequipa.">
+    <title>Cosméticos | Lumina Atelier</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main-sass.css">
+    <link rel="stylesheet" href="../css/main-less.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header>
+        <nav class="navbar navbar-lumina" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <div class="navbar-brand">
+            <a class="navbar-item logo-texto" href="../index.html">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Lumina Atelier</span>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            </div>
+
+            <div id="menuPrincipal" class="navbar-menu">
+            <div class="navbar-end is-align-items-center">
+                <a class="navbar-item" href="../index.html">Inicio</a>
+                <a class="navbar-item" href="nosotros.html">Nosotros</a>
+                <a class="navbar-item" href="servicios.html">Servicios</a>
+                <a class="navbar-item is-active" href="cosmeticos.html">Cosméticos</a>
+                <a class="navbar-item" href="blog.html">Blog</a>
+                <a class="navbar-item" href="contacto.html">Contacto</a>
+                <div class="navbar-item">
+                <a href="contacto.html" class="button btn-lumina">RESERVAR</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- BANNER INTERNO -->
+    <section class="hero is-small banner-interno banner-cosmeticos">
+        <div class="hero-body has-text-centered">
+        <div class="container animar-scroll">
+            <p class="etiqueta-superior">LÍNEA BOTÁNICA</p>
+            <h1 class="title is-1 titulo-principal">Cosméticos Naturales</h1>
+            <p class="subtitle is-5 subtitulo-interno mt-2">
+            Fórmulas libres de parabenos, elaboradas con extractos orgánicos para continuar tu ritual de spa en casa.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO CON CSS GRID AUTOMÁTICO -->
+    <main class="section seccion-crema">
+        <div class="container">
+            <div class="grid-catalogo">
+                <!-- Producto 1 -->
+                <article class="card servicio-card card-producto animar-scroll delay-1">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/blog-hialuronico.jpg" alt="Sérum de Ácido Hialurónico">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Facial</span>
+                        <h2 class="title is-5 titulo-card mb-2">Sérum Ácido Hialurónico 2%</h2>
+                        <p class="texto-card mb-4">Hidratación profunda de rápida absorción con extracto de pepino y vitamina B5. Ideal para todo tipo de piel.</p>
+                        <div class="producto-footer mt-auto">
+                            <span class="precio-producto">S/ 95.00</span>
+                            <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="card servicio-card card-producto animar-scroll delay-2">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/blog-calma.jpg" alt="Aceite Esencial de Lavanda">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Aromaterapia</span>
+                        <h2 class="title is-5 titulo-card mb-2">Aceite Esencial de Lavanda</h2>
+                        <p class="texto-card mb-4">Destilación pura al vapor (30 ml). Ayuda a reducir el estrés nocturno y mejorar la calidad del sueño.</p>
+                        <div class="producto-footer mt-auto">
+                        <span class="precio-producto">S/ 65.00</span>
+                        <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="card servicio-card card-producto animar-scroll delay-3">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/blog-botanica.jpg" alt="Crema Hidratante de Caléndula">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Facial</span>
+                        <h2 class="title is-5 titulo-card mb-2">Crema Caléndula y Avena</h2>
+                        <p class="texto-card mb-4">Textura ligera y calmante que restaura la barrera cutánea y alivia rojeces en pieles sensibles.</p>
+                        <div class="producto-footer mt-auto">
+                            <span class="precio-producto">S/ 80.00</span>
+                            <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="card servicio-card card-producto animar-scroll delay-1">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/banner-nosotros.jpg" alt="Exfoliante de Sales y Eucalipto">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Corporal</span>
+                        <h2 class="title is-5 titulo-card mb-2">Exfoliante Sales y Eucalipto</h2>
+                        <p class="texto-card mb-4">Sales minerales finas combinadas con aceite de almendras dulces para renovar y suavizar la piel.</p>
+                        <div class="producto-footer mt-auto">
+                            <span class="precio-producto">S/ 70.00</span>
+                            <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="card servicio-card card-producto animar-scroll delay-2">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/banner-servicios.jpg" alt="Mascarilla de Arcilla Verde">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Facial</span>
+                        <h2 class="title is-5 titulo-card mb-2">Mascarilla Arcilla Verde</h2>
+                        <p class="texto-card mb-4">Detox purificante que absorbe el exceso de grasa y minimiza poros sin resecar el rostro.</p>
+                        <div class="producto-footer mt-auto">
+                            <span class="precio-producto">S/ 60.00</span>
+                            <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="card servicio-card card-producto animar-scroll delay-3">
+                    <div class="producto-img-box">
+                        <img src="../assets/img/blog-botanica.jpg" alt="Bálsamo Calmante Post-Depilación">
+                    </div>
+                    <div class="card-content is-flex is-flex-direction-column is-flex-grow-1">
+                        <span class="tag is-light badge-categoria-blog mb-2 is-align-self-flex-start">Corporal</span>
+                        <h2 class="title is-5 titulo-card mb-2">Bálsamo Post-Depilación</h2>
+                        <p class="texto-card mb-4">Gel refrescante de aloe vera orgánico y manzanilla para calmar la piel inmediatamente tras la depilación.</p>
+                        <div class="producto-footer mt-auto">
+                            <span class="precio-producto">S/ 55.00</span>
+                            <a href="contacto.html" class="button is-small btn-lumina">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer footer-lumina">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-4">
+                    <p class="marca-footer">Lumina Atelier</p>
+                    <p class="copyright-footer mt-1">&copy; 2026 Hojas de Estilo en Cascada Avanzado</p>
+                </div>
+
+                <div class="column is-4 has-text-centered">
+                    <div class="enlaces-footer">
+                        <a href="../index.html">Inicio</a> |
+                        <a href="nosotros.html">Nosotros</a> |
+                        <a href="servicios.html">Servicios</a> |
+                        <a href="cosmeticos.html">Cosméticos</a> |
+                        <a href="blog.html">Blog</a> |
+                        <a href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="column is-4 has-text-right-desktop has-text-centered-mobile">
+                <p class="contacto-footer">contacto@luminaatelier.com | Arequipa, Perú</p>
+                    <div class="redes-footer mt-2">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menú hamburguesa móvil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

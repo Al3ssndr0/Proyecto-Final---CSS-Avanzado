@@ -1,0 +1,172 @@
+/* Botones CTA con animación */
+.btn-lumina {
+  background-color: #849B87;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-lumina:hover {
+  background-color: #6a826d;
+  color: #FFFFFF;
+  -webkit-transform: translateY(-2px) scale(1.03);
+  -moz-transform: translateY(-2px) scale(1.03);
+  -ms-transform: translateY(-2px) scale(1.03);
+  -o-transform: translateY(-2px) scale(1.03);
+  transform: translateY(-2px) scale(1.03);
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+/* Tarjetas de Servicios con efecto flotante */
+.servicio-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 100%;
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.servicio-card .titulo-card {
+  color: #2F3E46;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.servicio-card .texto-card {
+  color: #5C6B73;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.servicio-card .enlace-detalle {
+  color: #5C6B73;
+  font-size: 0.9rem;
+  font-weight: 500;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.servicio-card .enlace-detalle:hover {
+  color: #6a826d;
+}
+.servicio-card:hover {
+  -webkit-transform: translateY(-8px) scale(1.02);
+  -moz-transform: translateY(-8px) scale(1.02);
+  -ms-transform: translateY(-8px) scale(1.02);
+  -o-transform: translateY(-8px) scale(1.02);
+  transform: translateY(-8px) scale(1.02);
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+}
+/* Responsividad móvil */
+@media (max-width: 768px) {
+  .hero-lumina {
+    text-align: center;
+    background-position: center;
+    background-image: linear-gradient(180deg, rgba(245, 240, 235, 0.92) 0%, rgba(245, 240, 235, 0.85) 100%), url('../assets/img/hero-spa.jpg');
+  }
+  .hero-lumina .subtitulo-hero {
+    margin: 0 auto;
+  }
+}
+/* Animación de entrada general */
+@keyframes aparecerArriba {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hero-contenido {
+  opacity: 0;
+  animation: aparecerArriba 0.8s ease-out forwards;
+}
+/* Entrada escalonada pura en CSS/LESS (sin JS) */
+.animar-scroll {
+  opacity: 0;
+  animation: aparecerArriba 0.8s ease-out forwards;
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+/* Ícono circular para equipo o autores */
+.avatar-circular {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #EFE7DD;
+  color: #6a826d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.servicio-card:hover .avatar-circular {
+  background-color: #849B87;
+  color: #FFFFFF;
+}
+/* Lista de enlaces para sidebars (Nosotros y Blog) */
+.lista-enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lista-enlaces li {
+  border-bottom: 1px solid #F2EFE9;
+}
+.lista-enlaces li:last-child {
+  border-bottom: none;
+}
+.lista-enlaces li a {
+  display: block;
+  padding: 0.65rem 0;
+  color: #5C6B73;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.lista-enlaces li a i {
+  color: #849B87;
+  margin-right: 0.5rem;
+}
+.lista-enlaces li a:hover {
+  color: #6a826d;
+  padding-left: 6px;
+  font-weight: 500;
+}

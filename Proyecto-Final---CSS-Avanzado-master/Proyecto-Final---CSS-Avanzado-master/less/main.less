@@ -1,0 +1,156 @@
+@import "_mixins.less";
+
+/* Botones CTA con animación */
+.btn-lumina {
+  background-color: @verde-btn;
+  color: #FFFFFF;
+  border: none;
+  border-radius: (@radio-base - 4px);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  .transicion(all 0.3s ease);
+
+  &:hover {
+    background-color: @verde-btn-hover;
+    color: #FFFFFF;
+    .transformacion(translateY(-2px) scale(1.03));
+    .sombra-card(0.18);
+  }
+}
+
+/* Tarjetas de Servicios con efecto flotante */
+.servicio-card {
+  background-color: #FFFFFF;
+  border-radius: @radio-base;
+  height: 100%;
+  .sombra-card(0.06);
+  .transicion(all 0.35s ease);
+
+  .titulo-card {
+    color: #2F3E46;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .texto-card {
+    color: #5C6B73;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .enlace-detalle {
+    color: #5C6B73;
+    font-size: 0.9rem;
+    font-weight: 500;
+    .transicion(color 0.2s ease);
+
+    &:hover {
+      color: @verde-btn-hover;
+    }
+  }
+
+  &:hover {
+    .transformacion(translateY(-8px) scale(1.02));
+    .sombra-card(0.16);
+  }
+}
+
+/* Responsividad móvil */
+@media (max-width: 768px) {
+  .hero-lumina {
+    text-align: center;
+    background-position: center;
+    background-image: linear-gradient(
+      180deg,
+      rgba(245, 240, 235, 0.92) 0%,
+      rgba(245, 240, 235, 0.85) 100%
+    ), url('../assets/img/hero-spa.jpg');
+
+    .subtitulo-hero {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Animación de entrada general */
+@keyframes aparecerArriba {
+  from {
+    opacity: 0;
+    .transformacion(translateY(30px));
+  }
+  to {
+    opacity: 1;
+    .transformacion(translateY(0));
+  }
+}
+
+.hero-contenido {
+  opacity: 0;
+  animation: aparecerArriba 0.8s ease-out forwards;
+}
+
+/* Entrada escalonada pura en CSS/LESS (sin JS) */
+.animar-scroll {
+  opacity: 0;
+  animation: aparecerArriba 0.8s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+.delay-2 {
+    animation-delay: 0.4s;
+}
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Ícono circular para equipo o autores */
+.avatar-circular {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #EFE7DD;
+  color: @verde-btn-hover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  .transicion(all 0.3s ease);
+
+  .servicio-card:hover & {
+    background-color: @verde-btn;
+    color: #FFFFFF;
+  }
+}
+
+/* Lista de enlaces para sidebars (Nosotros y Blog) */
+.lista-enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid #F2EFE9;
+    &:last-child { border-bottom: none; }
+
+    a {
+      display: block;
+      padding: 0.65rem 0;
+      color: #5C6B73;
+      font-size: 0.9rem;
+      .transicion(all 0.25s ease);
+
+      i { color: @verde-btn; margin-right: 0.5rem; }
+
+      &:hover {
+        color: @verde-btn-hover;
+        padding-left: 6px;
+        font-weight: 500;
+      }
+    }
+  }
+}

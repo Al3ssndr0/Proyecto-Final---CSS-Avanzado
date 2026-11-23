@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumina Atelier - Spa, aromaterapia, cosméticos y cuidado facial exclusivo en Arequipa.">
+    <title>Lumina Atelier | Belleza y Relajación</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome (redes sociales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Framework Bulma CSS (60%) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <!-- CSS Tradicional (10%) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Compilado de SASS (15%) -->
+    <link rel="stylesheet" href="css/main-sass.css">
+
+    <!-- Compilado de LESS (15%) -->
+    <link rel="stylesheet" href="css/main-less.css">
+</head>
+<body>
+    <!-- Header y Menú (Bulma Navbar + SASS) -->
+    <header>
+        <nav class="navbar navbar-lumina" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <div class="navbar-brand">
+            <a class="navbar-item logo-texto" href="index.html">
+                <i class="fa-solid fa-leaf mr-2"></i>
+                <span>Lumina Atelier</span>
+            </a>
+
+            <!-- Botón hamburguesa para móviles -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            </div>
+
+            <div id="menuPrincipal" class="navbar-menu">
+            <div class="navbar-end is-align-items-center">
+                <a class="navbar-item is-active" href="index.html">Inicio</a>
+                <a class="navbar-item" href="pages/nosotros.html">Nosotros</a>
+                <a class="navbar-item" href="pages/servicios.html">Servicios</a>
+                <a class="navbar-item" href="pages/cosmeticos.html">Cosméticos</a>
+                <a class="navbar-item" href="pages/blog.html">Blog</a>
+                <a class="navbar-item" href="pages/contacto.html">Contacto</a>
+                <div class="navbar-item">
+                <a href="pages/contacto.html" class="button btn-lumina">RESERVAR</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main>
+        <section class="hero is-medium hero-lumina">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6-desktop is-12-mobile hero-contenido">
+                        <h1 class="title is-1 titulo-principal">
+                            Un Refugio de Paz y Bienestar para tu Piel
+                        </h1>
+                        <p class="subtitle is-5 subtitulo-hero mt-4">
+                            Aromaterapia, masajes y cuidado facial exclusivo en Arequipa.
+                        </p>
+                        <a href="pages/contacto.html" class="button is-medium btn-lumina mt-4">
+                            RESERVAR CITA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN: Nuestros Servicios (Bulma Columns + LESS Hover) -->
+        <section class="section seccion-servicios">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered titulo-seccion mb-6 animar-scroll">
+                    Nuestros Servicios
+                </h2>
+
+                <div class="columns is-variable is-6">
+                <!-- Tarjeta 1 -->
+                    <div class="column is-4 animar-scroll delay-1">
+                        <article class="card servicio-card">
+                            <div class="card-content">
+                                <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                    <h3 class="title is-4 titulo-card">Afeitado y Depilación</h3>
+                                    <figure class="image is-64x64 icono-servicio">
+                                        <img src="assets/img/icono-afeitado.png" alt="Afeitado y Depilación">
+                                    </figure>
+                                </div>
+                                <p class="texto-card mb-5">
+                                    Técnicas suaves y precisas con cera orgánica y cuidado post-depilatorio para una piel tersa y libre de irritación.
+                                </p>
+                                <a href="pages/afeitado-depilacion.html" class="enlace-detalle">
+                                    Ver detalles <i class="fa-solid fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="column is-4 animar-scroll delay-2">
+                        <article class="card servicio-card">
+                            <div class="card-content">
+                                <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                    <h3 class="title is-4 titulo-card">Aromaterapia</h3>
+                                    <figure class="image is-64x64 icono-servicio">
+                                        <img src="assets/img/icono-aromaterapia.png" alt="Aromaterapia">
+                                    </figure>
+                                </div>
+                                <p class="texto-card mb-5">
+                                Masajes terapéuticos con aceites esenciales puros de lavanda, eucalipto y manzanilla para restaurar tu equilibrio.
+                                </p>
+                                <a href="pages/aromaterapia.html" class="enlace-detalle">
+                                Ver detalles <i class="fa-solid fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="column is-4 animar-scroll delay-3">
+                        <article class="card servicio-card">
+                            <div class="card-content">
+                                <div class="is-flex is-justify-content-space-between is-align-items-start mb-3">
+                                    <h3 class="title is-4 titulo-card">Cuidado de la Piel</h3>
+                                    <figure class="image is-64x64 icono-servicio">
+                                        <img src="assets/img/icono-piel.png" alt="Cuidado de la Piel">
+                                    </figure>
+                                </div>
+                                <p class="texto-card mb-5">
+                                Tratamientos faciales hidratantes, limpieza profunda y cosmética natural adaptada a las necesidades de tu rostro.
+                                </p>
+                                <a href="pages/cuidado-piel.html" class="enlace-detalle">
+                                Ver detalles <i class="fa-solid fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Bulma Footer + SASS) -->
+    <footer class="footer footer-lumina">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-4">
+                    <p class="marca-footer">Lumina Atelier</p>
+                    <p class="copyright-footer mt-1">&copy; 2026 Hojas de Estilo en Cascada Avanzado</p>
+                </div>
+
+                <div class="column is-4 has-text-centered">
+                    <div class="enlaces-footer">
+                        <a href="index.html">Inicio</a> |
+                        <a href="pages/nosotros.html">Nosotros</a> |
+                        <a href="pages/servicios.html">Servicios</a> |
+                        <a href="pages/cosmeticos.html">Cosméticos</a> |
+                        <a href="pages/blog.html">Blog</a> |
+                        <a href="pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="column is-4 has-text-right-desktop has-text-centered-mobile">
+                    <p class="contacto-footer">contacto@luminaatelier.com | Arequipa, Perú</p>
+                    <div class="redes-footer mt-2">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el menú hamburguesa en móviles -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.querySelector('.navbar-burger');
+        const menu = document.getElementById(burger.dataset.target);
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+        });
+        });
+    </script>
+</body>
+</html>

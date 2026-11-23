@@ -1,0 +1,488 @@
+@use 'variables' as *;
+
+/* Header fijo y Navegación */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-lumina {
+    background-color: rgba(239, 231, 221, 0.96);
+    backdrop-filter: blur(8px);
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+    .navbar-item {
+        color: $texto-oscuro;
+        font-weight: 400;
+        font-size: 0.95rem;
+
+        &:hover, &.is-active {
+        background-color: transparent;
+        color: $verde-salvia-oscuro;
+        font-weight: 600;
+        }
+    }
+
+  /* Mayor especificidad y al final para que no sea sobrescrito */
+    a.navbar-item.logo-texto {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $texto-oscuro;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        i {
+            font-size: 1.8rem;
+            color: $verde-salvia;
+            margin-right: 0.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $verde-salvia-oscuro;
+            transform: scale(1.03);
+
+            i {
+                color: $verde-salvia-oscuro;
+                transform: rotate(-12deg);
+            }
+        }
+    }
+}
+
+.navbar-burger {
+    color: $verde-salvia-oscuro;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+
+    &:hover,
+    &:focus,
+    &.is-active {
+      color: $verde-salvia-oscuro;
+      background-color: rgba(132, 155, 135, 0.18); // Fondo verde salvia muy suave
+    }
+  }
+
+/* Sección Hero */
+.hero-lumina {
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 240, 235, 0.96) 0%,
+    rgba(245, 240, 235, 0.85) 45%,
+    rgba(245, 240, 235, 0.15) 100%
+  ), url('../assets/img/hero-spa.jpg');
+  background-size: cover;
+  background-position: center right;
+  min-height: 520px;
+
+  .titulo-principal {
+    color: $texto-oscuro;
+    line-height: 1.15;
+    font-weight: 600;
+  }
+
+  .subtitulo-hero {
+    color: $texto-suave;
+    font-weight: 400;
+    max-width: 450px;
+  }
+}
+
+/* Sección Servicios */
+.seccion-servicios {
+  background-color: $fondo-crema;
+  padding: 4.5rem 1.5rem;
+
+  .titulo-seccion {
+    color: $texto-oscuro;
+    font-weight: 500;
+  }
+}
+
+/* Footer */
+.footer-lumina {
+  background-color: $carbon;
+  color: $blanco;
+  padding: 2.5rem 1.5rem;
+
+  .marca-footer {
+    font-size: 1.4rem;
+    color: $blanco;
+  }
+
+  .copyright-footer, .contacto-footer {
+    font-size: 0.85rem;
+    color: #CBD5E1;
+  }
+
+  .enlaces-footer a {
+    color: #E2E8F0;
+    font-size: 0.85rem;
+    margin: 0 0.3rem;
+
+    &:hover {
+      color: $verde-salvia;
+    }
+  }
+
+  .redes-footer a {
+    color: $blanco;
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+
+    &:hover {
+      color: $verde-salvia;
+    }
+  }
+}
+
+/* COMPONENTES GLOBALES REUTILIZABLES */
+.banner-interno {
+  background-color: $beige-calido;
+  border-bottom: 1px solid rgba(47, 62, 70, 0.08);
+  padding: 2.5rem 1.5rem;
+
+  .subtitulo-interno {
+    color: $texto-suave;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.etiqueta-superior {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $verde-salvia-oscuro;
+}
+
+.seccion-crema {
+  background-color: $fondo-crema;
+  padding: 4rem 1.5rem;
+}
+
+.grid-sidebar {
+  display: grid;
+  grid-template-columns: 7fr 3fr; // 70% Contenido / 30% Sidebar
+  gap: 2.5rem;
+  align-items: start;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.caja-blanca {
+  background-color: $blanco;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+  &.borde-salvia {
+    border-top: 4px solid $verde-salvia;
+  }
+}
+
+.cita-lumina {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: $texto-oscuro;
+  border-left: 4px solid $verde-salvia;
+  padding-left: 1rem;
+}
+
+/* Tabla reutilizable (Servicios, Tarifas, Comparativas) */
+.tabla-lumina {
+  thead th {
+    background-color: $beige-calido;
+    color: $texto-oscuro;
+    font-weight: 600;
+    border-bottom: 2px solid $verde-salvia;
+    padding: 1rem;
+  }
+
+  tbody td {
+    vertical-align: middle;
+    color: $texto-suave;
+    padding: 1rem;
+    border-color: #F2EFE9;
+  }
+
+  .precio-tabla {
+    color: $verde-salvia-oscuro;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+.banner-interno {
+  background-color: $beige-calido; // Respaldo si alguna página no tiene foto
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid rgba(47, 62, 70, 0.08);
+  padding: 3.5rem 1.5rem;
+
+  // Variantes con velo translúcido para mantener la legibilidad del texto
+  &.banner-nosotros {
+    background-image:
+      linear-gradient(rgba(247, 246, 242, 0.80), rgba(239, 231, 221, 0.85)),
+      url('../assets/img/banner-nosotros.jpg');
+  }
+
+  &.banner-servicios {
+    background-image:
+      linear-gradient(rgba(247, 246, 242, 0.80), rgba(239, 231, 221, 0.85)),
+      url('../assets/img/banner-servicios.jpg');
+  }
+
+  .subtitulo-interno {
+    color: $texto-oscuro; // Mejor contraste sobre imagen
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================================
+   ESTILOS DE LA PÁGINA DE BLOG
+   ========================================= */
+
+// Imagen de fondo con velo translúcido en el banner del blog
+.banner-interno.banner-blog {
+  background-image:
+    linear-gradient(rgba(247, 246, 242, 0.82), rgba(239, 231, 221, 0.85)),
+    url('../assets/img/banner-blog.jpg');
+}
+
+// Estructura y rellenos de las tarjetas de blog
+.relative-blog-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0; // Se elimina el padding para que la imagen toque los bordes
+
+  .container-img-blog {
+    min-height: 200px;
+    background-color: $beige-calido;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .placeholder-img-blog {
+      font-size: 3.5rem;
+      color: rgba(47, 62, 70, 0.15);
+    }
+  }
+
+  .pd-blog-contenido {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Tipografías y componentes internos de las entradas
+.badge-categoria-blog {
+  background-color: rgba(132, 155, 135, 0.15) !important;
+  color: $verde-salvia-oscuro !important;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.texto-fecha {
+  font-size: 0.8rem;
+  color: $texto-suave;
+}
+
+.title-link-blog {
+  a {
+    color: $texto-oscuro;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $verde-salvia-oscuro;
+    }
+  }
+}
+
+.autor-blog {
+  font-size: 0.8rem;
+  color: $texto-suave;
+}
+
+.font-peso-blog {
+  font-weight: 500;
+}
+
+// Imágenes del Blog
+.img-blog-cobertura {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.enlace-detalle {
+  color: $verde-salvia-oscuro;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: $texto-oscuro;
+  }
+}
+
+/* CATÁLOGO CON CSS GRID AUTOMÁTICO */
+.banner-interno.banner-cosmeticos {
+  background-image:
+    linear-gradient(rgba(247, 246, 242, 0.82), rgba(239, 231, 221, 0.85)),
+    url('../assets/img/blog-botanica.jpg');
+}
+
+.grid-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+}
+
+.card-producto {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .producto-img-box {
+    height: 220px;
+    overflow: hidden;
+    background-color: $beige-calido;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+  }
+
+  &:hover .producto-img-box img {
+    transform: scale(1.05);
+  }
+
+  .producto-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #F2EFE9;
+  }
+
+  .precio-producto {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $verde-salvia-oscuro;
+  }
+}
+
+/* =========================================
+   FORMULARIOS ESTILIZADOS (Contacto y Clientes)
+   Usa clases Bulma: .field .control .input .select .textarea
+   ========================================= */
+$rojo-suave: #B5655C;
+
+.form-lumina {
+  .label {
+    color: $texto-oscuro;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+  }
+
+  .input,
+  .textarea,
+  .select select {
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    background-color: $blanco;
+    color: $texto-oscuro;
+    box-shadow: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &::placeholder {
+      color: #A5ADA8;
+    }
+
+    // Estado FOCUS: verde salvia con halo suave
+    &:focus {
+      border-color: $verde-salvia;
+      box-shadow: 0 0 0 3px rgba(132, 155, 135, 0.25);
+      outline: none;
+    }
+
+    // Estado VALID: solo cuando el usuario ya escribió algo
+    &:valid:not(:placeholder-shown),
+    &:valid:not(:placeholder-shown):focus {
+      border-color: $verde-salvia-oscuro;
+    }
+
+    // Estado INVALID: solo cuando ya hay contenido (evita rojo al cargar)
+    &:invalid:not(:placeholder-shown):not(:focus) {
+      border-color: $rojo-suave;
+      background-color: #FDF7F6;
+    }
+  }
+
+  .select select:valid {
+    border-color: #DDD8CE;
+  }
+
+  .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: $verde-salvia-oscuro;
+  }
+
+  .textarea {
+    min-height: 130px;
+  }
+
+  .checkbox,
+  .radio {
+    color: $texto-suave;
+    font-size: 0.9rem;
+
+    input {
+      accent-color: $verde-salvia-oscuro;
+      margin-right: 0.4rem;
+    }
+  }
+
+  .help {
+    font-size: 0.78rem;
+    color: $texto-suave;
+  }
+}
+
+/* =========================================
+   MAPA EMBEBIDO (iframe responsivo)
+   ========================================= */
+.mapa-lumina {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 340px;
+    border: 0;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+      height: 260px;
+    }
+  }
+}
