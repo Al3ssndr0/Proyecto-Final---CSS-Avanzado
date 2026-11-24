@@ -13,7 +13,7 @@ Componentes CSS exclusivos:
 Sitio web responsivo desarrollado para **Lumina Atelier**, un centro de spa, estética integral y cosmética botánica en Arequipa, Perú.  
 Proyecto final del curso **Hojas de Estilo en Cascada Avanzado** (UTP, 2026).
 
-🌐 **Demo en vivo (GitHub Pages):** `[Coloca aquí tu enlace de GitHub Pages]`
+🌐 **Demo en vivo (GitHub Pages):** https://al3ssndr0.github.io/Proyecto-Final---CSS-Avanzado/index.html
 
 ---
 
