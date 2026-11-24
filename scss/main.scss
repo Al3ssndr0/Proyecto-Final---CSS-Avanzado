@@ -247,6 +247,38 @@ header {
   }
 }
 
+// Sección verde
+.seccion-verde {
+  background-color: $verde-salvia-oscuro;
+  color: #FFFFFF;
+
+  .etiqueta-superior {
+    color: $beige-calido;
+  }
+
+  .title {
+    color: #FFFFFF;
+  }
+
+  .texto-card {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .btn-lumina-claro {
+    background-color: $beige-calido;
+    color: $texto-oscuro;
+    border: none;
+    font-weight: 600;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: $verde-salvia-oscuro;
+      transform: translateY(-2px);
+    }
+  }
+}
+
 /* =========================================
    ESTILOS DE LA PÁGINA DE BLOG
    ========================================= */
